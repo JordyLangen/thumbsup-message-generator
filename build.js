@@ -1,29 +1,29 @@
 "bundle";
 System.register("lib/generator.js", [], function (_export) {
-	"use strict";
+  "use strict";
 
-	var messages, dogeMessages;
+  var messages, dogeMessages;
 
-	_export("generateMessage", generateMessage);
+  _export("generateMessage", generateMessage);
 
-	function generateMessage() {
-		var index = new Date().getTime() % messages.length;
-		if (index === 0) {
-			var start = dogeMessages[Math.floor(Math.random() * dogeMessages.length)];
-			var end = dogeMessages[Math.floor(Math.random() * dogeMessages.length)];
-			return start + ", " + end;
-		} else {
-			return messages[new Date().getTime() % messages.length];
-		}
-	}
+  function generateMessage() {
+    var index = new Date().getTime() % messages.length;
+    if (index === 0) {
+      var start = dogeMessages[Math.floor(Math.random() * dogeMessages.length)];
+      var end = dogeMessages[Math.floor(Math.random() * dogeMessages.length)];
+      return start + ", " + end;
+    } else {
+      return messages[new Date().getTime() % messages.length];
+    }
+  }
 
-	return {
-		setters: [],
-		execute: function () {
-			messages = ["[random doge message]", "why not", "looks good", "very nice!", "awesome", "looks about right", "sick!", "exactly what we need", "even better than i thought", "uber", "speechless", "nice", "cool", "flawless", "damn pretty", ":)", "o.O", "¯\_(ツ)_/¯"];
-			dogeMessages = ["such cool", "much wow", "such awesome", "much awesome", "much wow", "very wow"];
-		}
-	};
+  return {
+    setters: [],
+    execute: function () {
+      messages = ["[random doge message]", "why not", "looks good", "very nice!", "awesome", "looks about right", "sick!", "exactly what we need", "even better than i thought", "uber", "speechless", "nice", "cool :dark_sunglasses:", "flawless", "damn pretty", ":)", "o.O", "¯\_(ツ)_/¯", "bloody brilliant", "made my day", "holy moly", "hell yeah", "about time", "not too shabby", "if only we came up with this earlier", "instant-deploy material", "genius", "finally", "ship it :ship:"];
+      dogeMessages = ["such cool", "much wow", "such awesome", "much awesome", "much wow", "very wow"];
+    }
+  };
 });
 (function() {
 var _removeDefine = System.get("@@amd-helpers").createDefine();
