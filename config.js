@@ -16,8 +16,8 @@ System.config({
     "build.js": [
       "lib/main.js",
       "lib/bootstrap.js",
-      "lib/generator.js",
       "github:components/jquery@2.1.4",
+      "lib/generator.js",
       "github:components/jquery@2.1.4/jquery"
     ]
   },

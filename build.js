@@ -20,7 +20,7 @@ System.register("lib/generator.js", [], function (_export) {
   return {
     setters: [],
     execute: function () {
-      messages = ["[random doge message]", "why not", "looks good", "very nice!", "awesome", "looks about right", "sick!", "exactly what we need", "even better than i thought", "uber", "speechless", "nice", "cool :dark_sunglasses:", "flawless", "damn pretty", ":)", "o.O", "¯\_(ツ)_/¯", "bloody brilliant", "made my day", "holy moly", "hell yeah", "about time", "not too shabby", "if only we came up with this earlier", "instant-deploy material", "genius", "finally", "ship it :ship:"];
+      messages = ["[random doge message]", "why not", "looks good", "very nice!", "awesome", "looks about right", "sick!", "exactly what we need", "even better than i thought", "uber", "speechless", "nice", "cool :dark_sunglasses:", "flawless", "damn pretty", ":)", "o.O", "¯\\_(ツ)_/¯", "bloody brilliant", "made my day", "holy moly", "hell yeah", "about time", "not too shabby", "if only we came up with this earlier", "instant-deploy material", "genius", "finally", "ship it :ship:", "┻━┻ ︵﻿ ¯\\(ツ)/¯ ︵ ┻━┻"];
       dogeMessages = ["such cool", "much wow", "such awesome", "much awesome", "much wow", "very wow"];
     }
   };
